@@ -1,0 +1,18 @@
+/* Nav bar  */
+.head{
+    background-color: #179fd4;
+}
+
+.top-button{
+    background-color: rgb(12, 55, 134);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 25px;
+}
+.img{
+    height: 300px;
+    width: auto;
+    margin: 2px;
+    padding: 2px;
+}

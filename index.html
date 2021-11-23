@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- customized css stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <!-- nav bar  was not necessary . -->
+        <nav class="navbar navbar-expand-lg navbar-light head">
+            <div class="container-fluid p-3 me-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Booklist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                        <li>
+                            <button class="ms-5 top-button">Login</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- book search area -->
+        <section class="container my-5 py-5">
+            <h1 class="text-center fw-bold pb-5">Search your favourite book</h1>
+            <!-- book search area -->
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="search-field" type="text" class="form-control" placeholder="Search the book you want"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="searchBook()" class="top-button" type="button" id="button-search">Search</button>
+            </div>
+        </section>
+
+        <!-- book search result -->
+        <div id="total-result" class="text-center">
+        </div>
+        <section class="container">
+            <div id="search-result" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            </div>
+        </section>
+        <div id="no-result" class="text-center">
+        </div>
+        <div>
+            <p id="error-message" class=" text-danger">Something went wrong please try again later</p>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- my  javascript file -->
+    <script src="js/booksearch.js"></script>
+</body>
+
+</html>
